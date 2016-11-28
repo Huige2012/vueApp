@@ -10,17 +10,32 @@ body { background: #fff; color: #5e5e5e; font: 14px/24px Microsoft YaHei, SimSun
 ul, ol { list-style: none; padding: 0 }
 table { border-collapse: collapse; border-spacing: 0 }
 /*默认a标签样式*/
-a:link, a:visited { color: #5e5e5e; text-decoration: none; }
+a:link, a:visited { color: #E5E9F2; text-decoration: none; }
 a:hover {
 /*color:#999;*/ }
-a:hover { color: #c9394a;
+a:hover { color: #20A0FF;
 /*text-decoration: underline;*/ }
-a:active { color: #666; }
+a:active { color: #20A0FF; }
+
 /*浮动和清除浮动*/
 .fl { float: left }
 .fr { float: right }
 .clear { zoom: 1 }
 .clear:after { content: ""; display: block; height: 0; visibility: visible; clear: both }
+
  /*显示隐藏*/
 .hide { display: none }
 .show { display: block }
+
+
+/* 变量定义 */
+$blue: #20A0FF;
+$lightBlue: #58B7FF;
+$darkBlue:#1D8CE0;
+$black:#1F2D3D;
+$lightBlack:#324057;
+$extraLightBlack:#475669;
+$gray:#D3DCE6;
+$lightGray:#E5E9F2;
+$white:#FFF;
+$darkWihte:#F9FAFC;

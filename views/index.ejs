@@ -1,93 +1,99 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <!-- 引入样式 -->
-  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-default/index.css">
+    <meta charset="UTF-8">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-default/index.css">
+    <link rel="stylesheet" href="stylesheets/layout.min.css">
 </head>
+
 <body>
-  <div id="app">
-    <header>
-      <h1>
-        <a href="#" class="logo">
-          首页
-        </a>
-      </h1>
-      <ul>
-        <li>菜单一</li>
-        <li>菜单二</li>
-        <li>菜单三</li>
-        <li>菜单四</li>
-      </ul>
-    </header>
+    <div id="app">
+        <header>
+            <div class="container">
+                <h1 class="fl">
+                  <a href="#" class="logo">
+                    MyHome
+                  </a>
+                </h1>
+                <ul class="fr">
+                    <li><a href="#">技术</a></li>
+                    <li><a href="#">设计</a></li>
+                    <li><a href="#">思考</a></li>
+                    <li><a href="#">生活</a></li>
+                </ul>
+            </div>
 
-    <div class="main">
-      <nav>
-        <ul>
-          <li>
-            <a href="#">开发指南</a>
-            <ul>
-              <li>指南1</li>
-              <li>指南2</li>
-              <li>指南3</li>
-              <li>指南4</li>
-              <li>指南5</li>
-            </ul>
-          </li>
+        </header>
 
-          <li>
-            <a href="#">开发指南</a>
-            <ul>
-              <li>指南1</li>
-              <li>指南2</li>
-              <li>指南3</li>
-              <li>指南4</li>
-              <li>指南5</li>
-            </ul>
-          </li>
+        <div class="main-cnt el-row">
+            <div class="container">
+              <nav class="navbar el-col-24 el-col-sm-6">
+                  <ul class="category-list">
+                      <li class="category-item">
+                          <a class="f18" href="#">开发指南</a>
+                          <ul class="item-list">
+                              <li>指南1</li>
+                              <li>指南2</li>
+                              <li>指南3</li>
+                              <li>指南4</li>
+                              <li>指南5</li>
+                          </ul>
+                      </li>
 
-          <li>
-            <a href="#">开发指南</a>
-            <ul>
-              <li>指南1</li>
-              <li>指南2</li>
-              <li>指南3</li>
-              <li>指南4</li>
-              <li>指南5</li>
-            </ul>
-          </li>
+                      <li class="category-item">
+                          <a class="f18" href="#">开发指南</a>
+                          <ul class="item-list">
+                              <li>指南1</li>
+                              <li>指南2</li>
+                              <li>指南3</li>
+                              <li>指南4</li>
+                              <li>指南5</li>
+                          </ul>
+                      </li>
 
-          <li>
-            <a href="#">开发指南</a>
-            <ul>
-              <li>指南1</li>
-              <li>指南2</li>
-              <li>指南3</li>
-              <li>指南4</li>
-              <li>指南5</li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+                      <li class="category-item">
+                          <a class="f18" href="#">开发指南</a>
+                          <ul class="item-list">
+                              <li>指南1</li>
+                              <li>指南2</li>
+                              <li>指南3</li>
+                              <li>指南4</li>
+                              <li>指南5</li>
+                          </ul>
+                      </li>
+
+
+                  </ul>
+              </nav>
+
+              <div class="content el-col-24  el-col-sm-18">
+                内容dewewew
+              </div>
+            </div>
+        </div>
+
+        <footer>
+
+        </footer>
     </div>
-
-    <footer>
-
-    </footer>
-  </div>
 </body>
 
-  <!-- 先引入 Vue -->
-  <script src="https://unpkg.com/vue/dist/vue.js"></script>
-  <!-- 引入组件库 -->
-  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<!-- 先引入 Vue -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
 
-  <script>
+<script>
     new Vue({
-      el: '#app',
-      data: function(){
-        return { visible: false }
-      }
+        el: '#app',
+        data: function() {
+            return {
+                visible: false
+            }
+        }
     })
-  </script>
+</script>
+
 </html>
